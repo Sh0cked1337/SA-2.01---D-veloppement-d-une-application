@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.MainController">
+   <VBox spacing="10.0" layoutX="10.0" layoutY="10.0">
+      <Label text="Liste des Spectacles"/>
+      <ListView fx:id="spectacleListView"/>
+      <Button text="Ajouter Spectacle" onAction="#handleAddSpectacle"/>
+      <Button text="Réserver" onAction="#handleReserve"/>
+   </VBox>
+</AnchorPane>
