@@ -1,5 +1,9 @@
 public class Paiement {
     private boolean realise;
-    
-    // Constructors, getters, and setters
+
+    public Paiement(boolean realise) {
+        this.realise = realise;
+    }
+
+    // Getters and Setters
 }

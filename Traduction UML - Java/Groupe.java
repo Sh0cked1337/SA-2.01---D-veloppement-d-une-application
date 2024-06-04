@@ -1,3 +1,10 @@
-public class Groupe extends TarifReduit {
-    // Additional properties and methods for Groupe
+public class Groupe extends Tarification {
+    private double reductionStatic;
+
+    public Groupe(double pleinTarif, double reductionStatic) {
+        super(pleinTarif);
+        this.reductionStatic = reductionStatic;
+    }
+
+    // Getters and Setters
 }

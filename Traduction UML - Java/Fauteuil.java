@@ -1,6 +1,11 @@
 public class Fauteuil {
     private String rangee;
     private String numero;
-    
-    // Constructors, getters, and setters
+
+    public Fauteuil(String rangee, String numero) {
+        this.rangee = rangee;
+        this.numero = numero;
+    }
+
+    // Getters and Setters
 }
