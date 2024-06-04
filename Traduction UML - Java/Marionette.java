@@ -1,5 +1,5 @@
-public class Marionnette extends Genre {
-    public Marionnette(String libelle) {
+public class Marionette extends Genre {
+    public Marionette(String libelle) {
         super(libelle);
     }
 
