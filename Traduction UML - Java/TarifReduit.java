@@ -1,5 +1,16 @@
-public class TarifReduit extends Tarif {
+public class TarifReduit extends Tarification {
     private double reductionStat;
-    
-    // Constructors, getters, and setters
+
+    public TarifReduit(double pleinTarif, double reductionStat) {
+        super(pleinTarif);
+        this.reductionStat = reductionStat;
+    }
+
+    public double getReductionStat() {
+        return reductionStat;
+    }
+
+    public void setReductionStat(double reductionStat) {
+        this.reductionStat = reductionStat;
+    }
 }

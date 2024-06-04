@@ -6,5 +6,11 @@ public class Groupe extends Tarification {
         this.reductionStatic = reductionStatic;
     }
 
-    // Getters and Setters
+    public double getReductionStatic() {
+        return reductionStatic;
+    }
+
+    public void setReductionStatic(double reductionStatic) {
+        this.reductionStatic = reductionStatic;
+    }
 }

@@ -15,5 +15,43 @@ public class Representation {
         this.fauteuils = fauteuils;
     }
 
-    // Getters and Setters
+    public String getJour() {
+        return jour;
+    }
+
+    public void setJour(String jour) {
+        this.jour = jour;
+    }
+
+    public String getHeure() {
+        return heure;
+    }
+
+    public void setHeure(String heure) {
+        this.heure = heure;
+    }
+
+    public boolean isAnnulee() {
+        return annulee;
+    }
+
+    public void setAnnulee(boolean annulee) {
+        this.annulee = annulee;
+    }
+
+    public Spectacle getSpectacle() {
+        return spectacle;
+    }
+
+    public void setSpectacle(Spectacle spectacle) {
+        this.spectacle = spectacle;
+    }
+
+    public List<Fauteuil> getFauteuils() {
+        return fauteuils;
+    }
+
+    public void setFauteuils(List<Fauteuil> fauteuils) {
+        this.fauteuils = fauteuils;
+    }
 }

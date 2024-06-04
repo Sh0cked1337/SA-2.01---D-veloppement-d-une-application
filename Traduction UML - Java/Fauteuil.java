@@ -7,5 +7,19 @@ public class Fauteuil {
         this.numero = numero;
     }
 
-    // Getters and Setters
+    public String getRangee() {
+        return rangee;
+    }
+
+    public void setRangee(String rangee) {
+        this.rangee = rangee;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
 }

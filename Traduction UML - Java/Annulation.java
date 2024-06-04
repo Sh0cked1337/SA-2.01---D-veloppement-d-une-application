@@ -9,5 +9,19 @@ public class Annulation {
         this.remboursementEffectue = remboursementEffectue;
     }
 
-    // Getters and Setters
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public boolean isRemboursementEffectue() {
+        return remboursementEffectue;
+    }
+
+    public void setRemboursementEffectue(boolean remboursementEffectue) {
+        this.remboursementEffectue = remboursementEffectue;
+    }
 }

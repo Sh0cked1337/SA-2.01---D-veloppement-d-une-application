@@ -5,5 +5,11 @@ public class Zone {
         this.nom = nom;
     }
 
-    // Getters and Setters
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
 }

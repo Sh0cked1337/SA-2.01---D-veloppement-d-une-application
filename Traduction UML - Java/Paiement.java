@@ -5,5 +5,11 @@ public class Paiement {
         this.realise = realise;
     }
 
-    // Getters and Setters
+    public boolean isRealise() {
+        return realise;
+    }
+
+    public void setRealise(boolean realise) {
+        this.realise = realise;
+    }
 }

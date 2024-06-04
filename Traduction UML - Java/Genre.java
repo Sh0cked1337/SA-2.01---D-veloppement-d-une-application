@@ -5,5 +5,11 @@ public class Genre {
         this.libelle = libelle;
     }
 
-    // Getters and Setters
+    public String getLibelle() {
+        return libelle;
+    }
+
+    public void setLibelle(String libelle) {
+        this.libelle = libelle;
+    }
 }

@@ -9,5 +9,27 @@ public class Facture {
         this.statutTauxTVA = statutTauxTVA;
     }
 
-    // Getters and Setters
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public double getMontantHT() {
+        return montantHT;
+    }
+
+    public void setMontantHT(double montantHT) {
+        this.montantHT = montantHT;
+    }
+
+    public double getStatutTauxTVA() {
+        return statutTauxTVA;
+    }
+
+    public void setStatutTauxTVA(double statutTauxTVA) {
+        this.statutTauxTVA = statutTauxTVA;
+    }
 }

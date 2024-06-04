@@ -5,5 +5,11 @@ public class Tarification {
         this.pleinTarif = pleinTarif;
     }
 
-    // Getters and Setters
+    public double getPleinTarif() {
+        return pleinTarif;
+    }
+
+    public void setPleinTarif(double pleinTarif) {
+        this.pleinTarif = pleinTarif;
+    }
 }

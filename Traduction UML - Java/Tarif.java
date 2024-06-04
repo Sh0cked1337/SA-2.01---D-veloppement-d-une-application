@@ -1,5 +1,15 @@
 public class Tarif {
     private double pleinTarif;
-    
-    // Constructors, getters, and setters
+
+    public Tarif(double pleinTarif) {
+        this.pleinTarif = pleinTarif;
+    }
+
+    public double getPleinTarif() {
+        return pleinTarif;
+    }
+
+    public void setPleinTarif(double pleinTarif) {
+        this.pleinTarif = pleinTarif;
+    }
 }

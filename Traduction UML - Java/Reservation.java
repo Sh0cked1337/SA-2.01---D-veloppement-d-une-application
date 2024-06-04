@@ -16,5 +16,43 @@ public class Reservation {
         this.billets = billets;
     }
 
-    // Getters and Setters
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public Date getDateEnvoiConf() {
+        return dateEnvoiConf;
+    }
+
+    public void setDateEnvoiConf(Date dateEnvoiConf) {
+        this.dateEnvoiConf = dateEnvoiConf;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
+    public List<Billet> getBillets() {
+        return billets;
+    }
+
+    public void setBillets(List<Billet> billets) {
+        this.billets = billets;
+    }
 }
