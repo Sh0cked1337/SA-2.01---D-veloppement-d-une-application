@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.MainController">
-   <VBox spacing="10.0" layoutX="10.0" layoutY="10.0">
-      <Label text="Liste des Spectacles"/>
-      <ListView fx:id="spectacleListView"/>
-      <Button text="Ajouter Spectacle" onAction="#handleAddSpectacle"/>
-      <Button text="Réserver" onAction="#handleReserve"/>
-   </VBox>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="514.0" layoutY="362.0" mnemonicParsing="false" text="Fermer" />
+      <ListView layoutX="33.0" layoutY="53.0" prefHeight="321.0" prefWidth="291.0" />
+      <Button layoutX="515.0" layoutY="113.0" mnemonicParsing="false" text="Détails" />
+      <Button layoutX="516.0" layoutY="66.0" mnemonicParsing="false" text="Ajouter un spectacle" AnchorPane.rightAnchor="0.0" />
+      <Text layoutX="33.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le Patio">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
 </AnchorPane>
