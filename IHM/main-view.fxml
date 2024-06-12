@@ -6,20 +6,73 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Button layoutX="514.0" layoutY="362.0" mnemonicParsing="false" text="Fermer" />
-      <ListView layoutX="33.0" layoutY="53.0" prefHeight="321.0" prefWidth="291.0" />
-      <Button layoutX="515.0" layoutY="113.0" mnemonicParsing="false" text="Détails" />
-      <Button layoutX="516.0" layoutY="66.0" mnemonicParsing="false" text="Ajouter un spectacle" AnchorPane.rightAnchor="0.0" />
-      <Text layoutX="33.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le Patio">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="18.0" prefWidth="231.0" text="Tableau des représentations" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TableView prefHeight="327.0" prefWidth="461.0">
+              <columns>
+                <TableColumn fx:id="colonneNomSpectacle" prefWidth="244.0" text="Nom du spectacle" />
+                <TableColumn fx:id="colonnedateSpectacle" prefWidth="245.0" text="Date du spectacle" />
+              </columns>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </center>
+   <right>
+      <VBox alignment="TOP_CENTER" prefHeight="355.0" prefWidth="123.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="bnAjouter" mnemonicParsing="false" text="Ajouter">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="bnDetails" mnemonicParsing="false" text="Détails">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <SplitMenuButton fx:id="bnFiltrer" mnemonicParsing="false" text="Filtrer">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </VBox.margin>
+            </SplitMenuButton>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </right>
+   <bottom>
+      <VBox alignment="BOTTOM_RIGHT" prefHeight="43.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="bnFermer" mnemonicParsing="false" text="Fermer" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </bottom>
+   <top>
+      <Label text="Le PATIO" textFill="#c63535" BorderPane.alignment="CENTER">
          <font>
-            <Font name="System Bold" size="20.0" />
+            <Font name="Arial Bold" size="20.0" />
          </font>
-      </Text>
-   </children>
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
-</AnchorPane>
+      </Label>
+   </top>
+</BorderPane>
